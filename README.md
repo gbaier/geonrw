@@ -4,6 +4,8 @@ Dataset description
 This repository contains processing scripts to create the [GeoNRW dataset](https://ieee-dataport.org/open-access/geonrw).
 It also contains a script to generate corresponding TerraSAR-X high-resolution spotlight samples, provided you have the corresponding EEC (Enhanced Ellipsoid Corrected) acquisitions.
 
+![Dataset Examples](../imgs/dataset_examples.jpg?raw=true)
+
 The dataset consists of orthorectified aerial photographs, LiDAR derived digital elevation models, segmentation maps with 10 classes, acquired through the [open data program of the German state North Rhine-Westphalia](https://www.opengeodata.nrw.de/produkte/) and refined with OpenStreeMap, and TerraSAR-X high resolution spotlight acquisitions.
 Please check the license information [Data licence Germany – attribution – Version 2.0](http://www.govdata.de/dl-de/by-2-0).
 Preprocessing consists of resampling the 0.1m resolution photographs to 1m and taking the first LiDAR return while averaging within 1m² to arrive at the same resolution as the photographs.
@@ -11,10 +13,12 @@ The geocoded and terrain corrected TerraSAR-X spotlight Enhanced Ellipsoid Corre
 
 In total the dataset consists of 7782 tiles of aerial photographs, land cover maps and DEMs of size 1000 × 1000.
 Since the TerraSAR-X archive does not contain data for all these tiles the SAR dataset is smaller and only consists of 2980 tiles.
+Below you find the class statistics for the dataset with 7782 tiles.
+
+![Dataset Statistics](../imgs/pie_plot.png)
 
 We include a PyTorch dataloader with a tentative split into train and test set.
 
-![Dataset Examples](../imgs/dataset_examples.jpg?raw=true)
 
 
 Creating the GeoNRW Dataset

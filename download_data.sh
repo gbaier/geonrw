@@ -95,7 +95,7 @@ URLS=(
     https://www.opengeodata.nrw.de/produkte/geobasis/hm/3dm_l_las/3dm_l_las_paketiert/3dm_l_las_05124000_Wuppertal_EPSG25832.zip
 )
 
-DOWNLOAD_DIR=/data/ggeoinfo/datasets/nrw/download
+DOWNLOAD_DIR=download
 
 mkdir $DOWNLOAD_DIR
 cd $DOWNLOAD_DIR
