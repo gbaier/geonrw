@@ -42,5 +42,5 @@ Creating the TerraSAR-X Tiles
 
 All scripts are supposed to be run from the main directory.
 
-1. Download all acquisitions listed in **tsx_aquisitions.txt** to the directory **download_tsx.py**
+1. Download all acquisitions listed in **tsx_aquisitions.txt** to the directory **download_tsx**
 2. Run **proc_tsx.py**
