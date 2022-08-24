@@ -29,7 +29,7 @@ def test_triplets(root):
         img_paths = sorted(city.glob('*.*'), key=get_coords)
         for key, group in itertools.groupby(img_paths, key=get_coords):
             group = list(group)
-            if len(group) != 3 or len(group) != 4:
+            if len(group) != 3 and len(group) != 4:
                 print('missing a file in {}: {}'.format(city.name, [g.name for g in group]))
 
 root = 'dataset'
